@@ -18,6 +18,6 @@ build:
     - mkdir -p shippable/codecoverage
     - shippable_retry npm install
     - export DISPLAY=:99.0
-    #- npm run shippable-build
+    - npm run shippable-build
     - xvfb-run --server-args="-ac" npm run shippable-test
-    - npm run lint #|| echo "Lint failed. See above for more details."
+    - npm run lint

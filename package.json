@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "shippable-build": "ng build --aot --prod",
-    "shippable-test": "ng test --single-run"
+    "shippable-lint": "ng lint --force --type-check",
+    "shippable-test": "ng test --code-coverage --single-run"
   },
   "private": true,
   "dependencies": {
